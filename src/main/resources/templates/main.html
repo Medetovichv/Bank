@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Account</title>
+</head>
+<body>
+<div>
+    <input type="hidden"/>
+    <span th:text="|${account.id} ${account.firstName} ${account.lastName} ${account.dateOfCreated}|"></span>
+    <h3><span th:text="|${account.amountOfMoney}|"></span></h3>
+    <a th:href="@{/transaction}">Geld Überweisen</a><br/>
+
+
+</div>
+</body>
+</html>
